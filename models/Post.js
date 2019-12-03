@@ -4,9 +4,9 @@ const Schema = mongoose.Schema;
 const PostSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
-    reference: 'users'
+    ref: 'users'
   },
-  textfield: {
+  text: {
     type: String,
     required: true
   },
@@ -20,7 +20,7 @@ const PostSchema = new Schema({
     {
       user: {
         type: Schema.Types.ObjectId,
-        reference: 'users'
+        ref: 'users'
       }
     }
   ],
@@ -28,7 +28,7 @@ const PostSchema = new Schema({
     {
       user: {
         type: Schema.Types.ObjectId,
-        reference: 'users'
+        ref: 'users'
       },
       text: {
         type: String,
@@ -49,4 +49,4 @@ const PostSchema = new Schema({
   }
 });
 
-module.exports = Post = mongoose('post', PostSchema);
+module.exports = Post = mongoose.model('post', PostSchema);
