@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://audouin:audouin@devconnector-qlvyt.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "51ef700f3ff38e0e0896",
+  "githubSecret": "4e2adb4219b28021fcb58f1f91d18229d0e63712"
+}
